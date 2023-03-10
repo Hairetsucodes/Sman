@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bomber Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #intro-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type="text"] {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="intro-screen">
+        <h1>Bomber Game</h1>
+        <input type="text" placeholder="Enter your name">
+        <button onclick="joinGame()">Join Game</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <ul id="scoreboard"></ul>
+    <p id="score"></p>
+
+    <script src="client.js"></script>
+</body>
+</html>
